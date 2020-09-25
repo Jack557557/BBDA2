@@ -380,7 +380,8 @@ library(forcats)
 library(lme4)
 library(purrr)
 library(readr)
-library(tibble)</code></pre>
+library(tibble)
+library(citation)</code></pre>
 <div id="introduction" class="section level1">
 <h1>Introduction</h1>
 <p>Over the past 50 years, the average global temperature has increased at the fastest rate in recorded history. Scientists agree that the earth’s rising temperatures are fueling longer and hotter heat waves, more frequent droughts, heavier rainfall, and more powerful hurricanes. On the other hand, the earth’s ocean temperatures are getting warmer, too. Thus, it is important for us to monitor the ocean temperatures with buoys. A buoy is a floating device equipped to measure weather parameters. It might be anchored or allowed to drift in the open ocean currents. This report using data gathered from the National Oceanic and Atmospheric Administration’s National Data Buoy Center. The purpose of this report is to explore the factors that might influence the air temperature (ATMP) above the sea level.</p>
@@ -692,7 +693,315 @@ plot(fit2)</code></pre>
 </div>
 <div id="reference" class="section level2">
 <h2>Reference</h2>
-<p><em><a href="https://www.ndbc.noaa.gov/station_page.php?station=44013" class="uri">https://www.ndbc.noaa.gov/station_page.php?station=44013</a></em></p>
+<p>U.S. Dept. of Commerce (2020) National Oceanic and Atmospheric Administration’s National Data Buoy Center. Available at: <a href="https://www.ndbc.noaa.gov/station_page.php?station=44013" class="uri">https://www.ndbc.noaa.gov/station_page.php?station=44013</a> (Accessed: 24 Sep 2020).</p>
+<pre class="r"><code>package2zenodo(&quot;tidyverse&quot;)</code></pre>
+<pre><code>## {
+##   &quot;title&quot;: &quot;tidyverse: Easily Install and Load the &#39;Tidyverse&#39;&quot;,
+##   &quot;version&quot;: &quot;1.3.0&quot;,
+##   &quot;description&quot;: &quot;&lt;p&gt;The &#39;tidyverse&#39; is a set of packages that work in\n    harmony because they share common data representations and &#39;API&#39;\n    design. This package is designed to make it easy to install and load\n    multiple &#39;tidyverse&#39; packages in a single step. Learn more about the\n    &#39;tidyverse&#39; at &lt;https://tidyverse.org&gt;.&lt;\/p&gt;&quot;,
+##   &quot;creators&quot;: [
+##     {
+##       &quot;name&quot;: &quot;Wickham, Hadley&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;RStudio&quot;
+##     }
+##   ]
+## }</code></pre>
+<pre class="r"><code>package2zenodo(&quot;stringr&quot;)</code></pre>
+<pre><code>## {
+##   &quot;title&quot;: &quot;stringr: Simple, Consistent Wrappers for Common String Operations&quot;,
+##   &quot;version&quot;: &quot;1.4.0&quot;,
+##   &quot;description&quot;: &quot;&lt;p&gt;A consistent, simple and easy to use set of\n    wrappers around the fantastic &#39;stringi&#39; package. All function and\n    argument names (and positions) are consistent, all functions deal with\n    \&quot;NA\&quot;&#39;s and zero length vectors in the same way, and the output from\n    one function is easy to feed into the input of another.&lt;\/p&gt;&quot;,
+##   &quot;creators&quot;: [
+##     {
+##       &quot;name&quot;: &quot;Wickham, Hadley&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;RStudio&quot;
+##     }
+##   ]
+## }</code></pre>
+<pre class="r"><code>package2zenodo(&quot;tidyr&quot;)</code></pre>
+<pre><code>## {
+##   &quot;title&quot;: &quot;tidyr: Tidy Messy Data&quot;,
+##   &quot;version&quot;: &quot;1.1.2&quot;,
+##   &quot;description&quot;: &quot;&lt;p&gt;Tools to help to create tidy data, where each column is a \n    variable, each row is an observation, and each cell contains a single value.  \n    &#39;tidyr&#39; contains tools for changing the shape (pivoting) and hierarchy\n    (nesting and &#39;unnesting&#39;) of a dataset, turning deeply nested lists\n    into rectangular data frames (&#39;rectangling&#39;), and extracting values out \n    of string columns. It also includes tools for working with missing values \n    (both implicit and explicit).&lt;\/p&gt;&quot;,
+##   &quot;creators&quot;: [
+##     {
+##       &quot;name&quot;: &quot;Wickham, Hadley&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;RStudio&quot;
+##     }
+##   ]
+## }</code></pre>
+<pre class="r"><code>package2zenodo(&quot;lubridate&quot;)</code></pre>
+<pre><code>## {
+##   &quot;title&quot;: &quot;lubridate: Make Dealing with Dates a Little Easier&quot;,
+##   &quot;version&quot;: &quot;1.7.9&quot;,
+##   &quot;description&quot;: &quot;&lt;p&gt;Functions to work with date-times and time-spans:\n    fast and user friendly parsing of date-time data, extraction and\n    updating of components of a date-time (years, months, days, hours,\n    minutes, and seconds), algebraic manipulation on date-time and\n    time-span objects. The &#39;lubridate&#39; package has a consistent and\n    memorable syntax that makes working with dates easy and fun.  Parts of\n    the &#39;CCTZ&#39; source code, released under the Apache 2.0 License, are\n    included in this package. See &lt;https://github.com/google/cctz&gt; for\n    more details.&lt;\/p&gt;&quot;,
+##   &quot;creators&quot;: [
+##     {
+##       &quot;name&quot;: &quot;Spinu, Vitalie&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Grolemund, Garrett&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Wickham, Hadley&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Lyttle, Ian&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Costigan, Imanuel&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Law, Jason&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Mitarotonda, Doug&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Larmarange, Joseph&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Boiser, Jonathan&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Lee, Chel Hee&quot;
+##     }
+##   ]
+## }</code></pre>
+<pre class="r"><code>package2zenodo(&quot;arm&quot;)</code></pre>
+<pre><code>## {
+##   &quot;title&quot;: &quot;arm: Data Analysis Using Regression and Multilevel/Hierarchical\n        Models&quot;,
+##   &quot;version&quot;: &quot;1.11-2&quot;,
+##   &quot;description&quot;: &quot;&lt;p&gt;Functions to accompany A. Gelman and J. Hill, Data Analysis Using Regression and Multilevel/Hierarchical Models, Cambridge University Press, 2007.&lt;\/p&gt;&quot;,
+##   &quot;creators&quot;: [
+##     {
+##       &quot;name&quot;: &quot;Gelman, Andrew&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Su, Yu-Sung&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Yajima, Masanao&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Hill, Jennifer&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Pittau, Maria Grazia&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Kerman, Jouni&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Zheng, Tian&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Dorie, Vincent&quot;
+##     }
+##   ]
+## }</code></pre>
+<pre class="r"><code>package2zenodo(&quot;ggplot2&quot;)</code></pre>
+<pre><code>## {
+##   &quot;title&quot;: &quot;ggplot2: Create Elegant Data Visualisations Using the Grammar of Graphics&quot;,
+##   &quot;version&quot;: &quot;3.3.2&quot;,
+##   &quot;description&quot;: &quot;&lt;p&gt;A system for &#39;declaratively&#39; creating graphics,\n    based on \&quot;The Grammar of Graphics\&quot;. You provide the data, tell &#39;ggplot2&#39;\n    how to map variables to aesthetics, what graphical primitives to use,\n    and it takes care of the details.&lt;\/p&gt;&quot;,
+##   &quot;creators&quot;: [
+##     {
+##       &quot;name&quot;: &quot;Wickham, Hadley&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Chang, Winston&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Henry, Lionel&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Pedersen, Thomas Lin&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Takahashi, Kohske&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Wilke, Claus&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Woo, Kara&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Yutani, Hiroaki&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Dunnington, Dewey&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;RStudio&quot;
+##     }
+##   ]
+## }</code></pre>
+<pre class="r"><code>package2zenodo(&quot;dplyr&quot;)</code></pre>
+<pre><code>## {
+##   &quot;title&quot;: &quot;dplyr: A Grammar of Data Manipulation&quot;,
+##   &quot;version&quot;: &quot;1.0.1&quot;,
+##   &quot;description&quot;: &quot;&lt;p&gt;A fast, consistent tool for working with data frame\n    like objects, both in memory and out of memory.&lt;\/p&gt;&quot;,
+##   &quot;creators&quot;: [
+##     {
+##       &quot;name&quot;: &quot;Wickham, Hadley&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Fran&lt;U+00E7&gt;ois, Romain&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Henry, Lionel&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Müller, Kirill&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;RStudio&quot;
+##     }
+##   ]
+## }</code></pre>
+<pre class="r"><code>package2zenodo(&quot;forcats&quot;)</code></pre>
+<pre><code>## {
+##   &quot;title&quot;: &quot;forcats: Tools for Working with Categorical Variables (Factors)&quot;,
+##   &quot;version&quot;: &quot;0.5.0&quot;,
+##   &quot;description&quot;: &quot;&lt;p&gt;Helpers for reordering factor levels (including\n    moving specified levels to front, ordering by first appearance,\n    reversing, and randomly shuffling), and tools for modifying factor\n    levels (including collapsing rare levels into other, &#39;anonymising&#39;,\n    and manually &#39;recoding&#39;).&lt;\/p&gt;&quot;,
+##   &quot;creators&quot;: [
+##     {
+##       &quot;name&quot;: &quot;Wickham, Hadley&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;RStudio&quot;
+##     }
+##   ]
+## }</code></pre>
+<pre class="r"><code>package2zenodo(&quot;lme4&quot;)</code></pre>
+<pre><code>## {
+##   &quot;title&quot;: &quot;lme4: Linear Mixed-Effects Models using &#39;Eigen&#39; and S4&quot;,
+##   &quot;version&quot;: &quot;1.1-23&quot;,
+##   &quot;description&quot;: &quot;&lt;p&gt;Fit linear and generalized linear mixed-effects models.\n    The models and their components are represented using S4 classes and\n    methods.  The core computational algorithms are implemented using the\n    &#39;Eigen&#39; C++ library for numerical linear algebra and &#39;RcppEigen&#39; \&quot;glue\&quot;.&lt;\/p&gt;&quot;,
+##   &quot;creators&quot;: [
+##     {
+##       &quot;name&quot;: &quot;Bates, Douglas&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Maechler, Martin&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Bolker, Ben&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Walker, Steven&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Christensen, Rune Haubo Bojesen&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Singmann, Henrik&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Dai, Bin&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Scheipl, Fabian&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Grothendieck, Gabor&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Green, Peter&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Fox, John&quot;
+##     }
+##   ]
+## }</code></pre>
+<pre class="r"><code>package2zenodo(&quot;purrr&quot;)</code></pre>
+<pre><code>## {
+##   &quot;title&quot;: &quot;purrr: Functional Programming Tools&quot;,
+##   &quot;version&quot;: &quot;0.3.4&quot;,
+##   &quot;description&quot;: &quot;&lt;p&gt;A complete and consistent functional programming\n    toolkit for R.&lt;\/p&gt;&quot;,
+##   &quot;creators&quot;: [
+##     {
+##       &quot;name&quot;: &quot;Henry, Lionel&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Wickham, Hadley&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;RStudio&quot;
+##     }
+##   ]
+## }</code></pre>
+<pre class="r"><code>package2zenodo(&quot;readr&quot;)</code></pre>
+<pre><code>## {
+##   &quot;title&quot;: &quot;readr: Read Rectangular Text Data&quot;,
+##   &quot;version&quot;: &quot;1.3.1&quot;,
+##   &quot;description&quot;: &quot;&lt;p&gt;The goal of &#39;readr&#39; is to provide a fast and friendly way to read\n    rectangular data (like &#39;csv&#39;, &#39;tsv&#39;, and &#39;fwf&#39;). It is designed to flexibly\n    parse many types of data found in the wild, while still cleanly failing when\n    data unexpectedly changes.&lt;\/p&gt;&quot;,
+##   &quot;creators&quot;: [
+##     {
+##       &quot;name&quot;: &quot;Wickham, Hadley&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Hester, Jim&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Francois, Romain&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;R Core Team&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;RStudio&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Jyl&lt;U+00E4&gt;nki, Jukka&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;J&lt;U+00F8&gt;rgensen, Mikkel&quot;
+##     }
+##   ]
+## }</code></pre>
+<pre class="r"><code>package2zenodo(&quot;tibble&quot;)</code></pre>
+<pre><code>## {
+##   &quot;title&quot;: &quot;tibble: Simple Data Frames&quot;,
+##   &quot;version&quot;: &quot;3.0.3&quot;,
+##   &quot;description&quot;: &quot;&lt;p&gt;Provides a &#39;tbl_df&#39; class (the &#39;tibble&#39;) that\n    provides stricter checking and better formatting than the traditional\n    data frame.&lt;\/p&gt;&quot;,
+##   &quot;creators&quot;: [
+##     {
+##       &quot;name&quot;: &quot;Müller, Kirill&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Wickham, Hadley&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Francois, Romain&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;Bryan, Jennifer&quot;
+##     },
+##     {
+##       &quot;name&quot;: &quot;RStudio&quot;
+##     }
+##   ]
+## }</code></pre>
+<pre class="r"><code>package2zenodo(&quot;citation&quot;)</code></pre>
+<pre><code>## {
+##   &quot;title&quot;: &quot;citation: Software Citation Tools&quot;,
+##   &quot;version&quot;: &quot;0.4.1&quot;,
+##   &quot;description&quot;: &quot;&lt;p&gt;A collection of functions to extract citation information from &#39;R&#39; packages and to deal with files in &#39;citation file format&#39; (&lt;https://citation-file-format.github.io/&gt;), extending the functionality already provided by the citation() function in the &#39;utils&#39; package.&lt;\/p&gt;&quot;,
+##   &quot;creators&quot;: [
+##     {
+##       &quot;name&quot;: &quot;Dietrich, Jan Philipp&quot;
+##     }
+##   ]
+## }</code></pre>
 </div>
 </div>
 
