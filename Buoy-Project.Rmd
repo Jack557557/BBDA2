@@ -201,6 +201,16 @@ Buoy2$date <- make_datetime(Buoy2$X.YY,Buoy2$MM,Buoy2$DD)
 
 ```
 
+##Methodology
+How we combine different data set and how we clean it using certain methodolody
+
+For our dataset, we choose from year 1999-2019, which are 20 year. When we first look at 20 years data of the Boston buoy, we noticed that different years have different column names. For example, for the year of 1999 and 2000, the "Tide" column has no value. Then from 2005-2019, each dataset has one more column called "mm" which means the mintues.  
+
+What we use to solve these problems is that we decide to make these dataset exact the same, meaning that the column name and numbers of columns must be the same. Then it will be convenient for us to combine the data without considering the slight differences that will cause error.
+
+Another problem for these datasets is that there are plenty of "NA" data that use 99, 999 to cover it. For those data, we also need to deal with them and eliminate the error that may cause in the future analysis.
+
+
 ## Model
 
 ### Model 1
