@@ -236,11 +236,9 @@ plot(Buoy2$PRES, Buoy2$ATMP, xlim = c(960, 1050), xlab = "Sea Level Pressure", y
 ```
 ## Considerations(curiosity)
 
-There are several additional considerations to help to fully understand this study. Firstly, our data sources are very limited since all these data come from the same observation station(44013). To make our conclusion and model more reliable, we need to collect data from more stations in different locations such as in the west American or in Eurasia. Secondly, we don't have not enough time span on our data. We think 20 year is not enough to make an accurate conclusion or prediction on ATMP above sea level. 
+There are several additional considerations to help to fully understand this study. Firstly, our data sources are very limited since all these data come from the same observation station(44013). To make our conclusion and model more reliable, we need to collect data from more stations in different locations such as in the west American or in Eurasia. Secondly, we don't have not enough time span on our data. We think 20 year is not enough to make an accurate conclusion or prediction on ATMP above sea level. If possible, we think 200 years will be a good choice for us to optimize our model.
 
 # Summary
 
-##  CONSIDERATIONS(curiosity)
 
-There are several additional considerations to help to fully understand this study. Firstly, our data sources are very limited since all these data come from the same observation station(44013). To make our conclusion and model more reliable, we need to collect data from more stations in different locations such as in the west American or in Eurasia. Secondly, we don't have not enough time span on our data. We think 20 year is not enough to make an accurate conclusion or prediction on ATMP above sea level. 
 
