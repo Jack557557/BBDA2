@@ -1,6 +1,6 @@
 ---
 title: "Buoy Project"
-author: "Yifan Liu"
+author: "Haoran Su, Haoyu Li, Xijia Luo, Yifan Liu"
 date: "2020/9/24"
 output: html_document
 ---
@@ -22,6 +22,10 @@ library(purrr)
 library(readr)
 library(tibble)
 ```
+
+# Introduction
+
+Over the past 50 years, the average global temperature has increased at the fastest rate in recorded history. Scientists agree that the earth's rising temperatures are fueling longer and hotter heat waves, more frequent droughts, heavier rainfall, and more powerful hurricanes. On the other hand, the earth's ocean temperatures are getting warmer, too. Thus, it is important for us to monitor the ocean temperatures with buoys. A buoy is a floating device equipped to measure weather parameters. It might be anchored or allowed to drift in the open ocean currents. This report using data gathered from the National Oceanic and Atmospheric Administration's National Data Buoy Center. The purpose of this report is to explore the factors that might influence the air temperature (ATMP) above the sea level. 
 
 ## Import Data
 ```{r}
@@ -184,9 +188,6 @@ Buoy2019 = Buoy2019[-c(1),]
 #Combine
 
 Buoy<-rbind(Buoy1999,Buoy2000,Buoy2001,Buoy2002,Buoy2003,Buoy2004,Buoy2005,Buoy2006,Buoy2007,Buoy2008,Buoy2009,Buoy2010,Buoy2011,Buoy2012,Buoy2013,Buoy2014,Buoy2015,Buoy2016,Buoy2017,Buoy2018,Buoy2019)
-
-
-
 ```
 
 ## Data Clean
