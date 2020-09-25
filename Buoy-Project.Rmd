@@ -27,6 +27,8 @@ library(tibble)
 
 Over the past 50 years, the average global temperature has increased at the fastest rate in recorded history. Scientists agree that the earth's rising temperatures are fueling longer and hotter heat waves, more frequent droughts, heavier rainfall, and more powerful hurricanes. On the other hand, the earth's ocean temperatures are getting warmer, too. Thus, it is important for us to monitor the ocean temperatures with buoys. A buoy is a floating device equipped to measure weather parameters. It might be anchored or allowed to drift in the open ocean currents. This report using data gathered from the National Oceanic and Atmospheric Administration's National Data Buoy Center. The purpose of this report is to explore the factors that might influence the air temperature (ATMP) above the sea level. 
 
+# Analysis
+
 ## Import Data
 ```{r}
 
@@ -199,7 +201,9 @@ Buoy2$date <- make_datetime(Buoy2$X.YY,Buoy2$MM,Buoy2$DD)
 
 ```
 
-## model
+## Model
+
+### Model 1
 ```{r}
 set.seed(10000)
 fit = lm(ATMP~WDIR+WSPD+GST+WVHT+DPD+APD+MWD+PRES+WTMP, data = Buoy2)
@@ -210,13 +214,21 @@ par(mfrow=c(2,2))
 plot(fit)
 ```
 
-## plot
+## Plot
 ```{r}
 ggplot(data=Buoy2, aes(x=date, y=ATMP)) + geom_line() + xlab("")
 ```
 ```{r}
 ggplot(data=Buoy2, aes(x=WTMP, y=ATMP)) + geom_point()
 ```
+```{r}
+plot(Buoy2$PRES, Buoy2$ATMP, xlim = c(960, 1050), xlab = "Sea Level Pressure", ylab = "Air Temperature")
+```
+## Considerations(curiosity)
+
+There are several additional considerations to help to fully understand this study. Firstly, our data sources are very limited since all these data come from the same observation station(44013). To make our conclusion and model more reliable, we need to collect data from more stations in different locations such as in the west American or in Eurasia. Secondly, we don't have not enough time span on our data. We think 20 year is not enough to make an accurate conclusion or prediction on ATMP above sea level. 
+
+# Summary
 
 ##  CONSIDERATIONS(curiosity)
 
