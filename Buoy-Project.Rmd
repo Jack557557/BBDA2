@@ -218,3 +218,7 @@ ggplot(data=Buoy2, aes(x=date, y=ATMP)) + geom_line() + xlab("")
 ggplot(data=Buoy2, aes(x=WTMP, y=ATMP)) + geom_point()
 ```
 
+##  CONSIDERATIONS(curiosity)
+
+There are several additional considerations to help to fully understand this study. Firstly, our data sources are very limited since all these data come from the same observation station(44013). To make our conclusion and model more reliable, we need to collect data from more stations in different locations such as in the west American or in Eurasia. Secondly, we don't have not enough time span on our data. We think 20 year is not enough to make an accurate conclusion or prediction on ATMP above sea level. 
+
