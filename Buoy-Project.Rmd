@@ -193,8 +193,8 @@ Buoy[Buoy==99|Buoy==999|Buoy==9999]<-0
 ## Data Clean
 ```{r}
 Buoy2 = filter(Buoy, hh == 10)
-Buoy2$date <- paste(Buoy2$X.YY, Buoy2$MM, Buoy2$DD, sep="-") %>% ymd() %>% as.Date()
 Buoy2 = data.frame(sapply(Buoy2, as.numeric))
+Buoy2$date <- paste(Buoy2$X.YY, Buoy2$MM, Buoy2$DD, sep="-") %>% ymd() %>% as.Date()
 
 ```
 
